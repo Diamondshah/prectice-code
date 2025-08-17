@@ -211,13 +211,15 @@ int main() {
     // cout << "Total sum of numbers divisible by 3 = " << sum << endl;
 
     // Q-- print factorial of a number n.
-    int n;
-    long long factorial = 1;
-    cout << "Enter a number to find its factorial: ";
-    cin >> n;
-    for (int i = 1; i <= n; i++) {
-        factorial *= i;
-    }
-    cout << "Factorial of " << n << " is " << factorial << endl;
+    // int n;
+    // long long factorial = 1;
+    // cout << "Enter a number to find its factorial: ";
+    // cin >> n;
+    // for (int i = 1; i <= n; i++) {
+    //     factorial *= i;
+    // }
+    // cout << "Factorial of " << n << " is " << factorial << endl;
+
+    
     return 0;
 }
