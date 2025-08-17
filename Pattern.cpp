@@ -50,19 +50,37 @@ int main() {
         //     cout<<"Aukat mai rah le ";
         // }
 ///////// Q---- Number continue not repirt::-----
-        int n=3;
-        
+        // int n;
+        // cout<<"Enter the Number of colume : ";
+        // cin>>n;
+        // int num=1;  
+        // for(int i=1;i<=n;i++){
+        //   for(int j=1;j<=n ;j++){
+        //         cout<<num<<" ";
+        //         num++;  }
+        //   cout<<"\n";
+        //      }
+        // cout<<"after pattern num = "<<num;
 
-       
-        for(int i=1;i<=n;i++){
-          
-            for(int j=1;j<=n ;j++){
-                cout<<n;
-                n=n+1;
-            }
-            cout<<"\n";
-        }
+/////////Q---- Charecter continue not repirt::-----
+        // int n=4; 
+        // char ch='A';  
+        // for(int i=1;i<=n;i++){
+        //   for(int j=1;j<=n ;j++){
+        //         cout<<ch<<" ";
+        //         ch=ch+1;  }
+        //   cout<<"\n";
+        //      }
+        // cout<<"after pattern num = "<<ch;
      
-
+/////////// _____----------Triangle Pattern----------__________
+int n=3;
+int m=n;
+for(int i=1;i<=n;i++){
+    for(int j=1;j<=m+1;j++){
+        cout<<"*";
+        m--;
+    }cout<<"\n";
+}
     return 0;
 }
