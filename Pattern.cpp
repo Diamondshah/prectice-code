@@ -74,13 +74,99 @@ int main() {
         // cout<<"after pattern num = "<<ch;
      
 /////////// _____----------Triangle Pattern----------__________
-int n=3;
-int m=n;
-for(int i=1;i<=n;i++){
-    for(int j=1;j<=m+1;j++){
-        cout<<"*";
-        m--;
-    }cout<<"\n";
-}
+    // int n;
+    // cout<<"Enter the number of row : ";
+    // cin>>n;
+    // // 1. Right angle triangle pattern
+    //         for(int i=1;i<=n;i++){
+    //             for(int j=1;j<=i;j++){
+    //                 cout<<"* ";
+    //             }cout<<"\n";
+    //         }
+//////// triangle Patterns For Number of Rows
+// Right angle triangle pattern with numbers
+            // 1         
+            // 2 2       
+            // 3 3 3     
+            // 4 4 4 4   
+            // 5 5 5 5 5 
+        // int n,num=1;
+        // cout<<"Enter the number of row : ";
+        // cin>>n;
+        
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=i;j++){
+        //         cout<<num<<" ";
+        //     }cout<<"\n";
+        //     num++;
+        // }
+// Right angle triangle pattern with alphabets
+            // A         
+            // B B       
+            // C C C     
+            // D D D D   
+            // E E E E E
+
+        // int n;
+        // cout<<"Enter the number of row : ";
+        // cin>>n;
+        // char ch='A';
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=i;j++){
+        //         cout<<ch<<" ";
+        //     }cout<<"\n";
+        //     ch++;
+        // }
+// Right angle triangle pattern with numbers increasing
+            // 1 
+            // 1 2
+            // 1 2 3
+            // 1 2 3 4
+            // 1 2 3 4 5
+
+
+        //  int n;
+        // cout<<"Enter the number of row : ";
+        // cin>>n;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=i;j++){
+        //         cout<<j<<" ";
+        //     }cout<<"\n";
+        // }
+// Right angle triangle pattern with numbers increasing in backward order
+            // 1 
+            // 2 1
+            // 3 2 1
+            // 4 3 2 1
+            // 5 4 3 2 1
+
+        int n;
+        cout<<"Enter the number of row : ";
+        cin>>n;
+        for(int i=1;i<=n;i++){
+            for(int j=i;j>=1;j--){
+                cout<<j<<" ";
+            }cout<<"\n";
+        }
+           
+
+    // Right angle triangle pattern with alphabets increasing
+            // A 
+            // A B
+            // A B C
+            // A B C D
+            // A B C D E
+
+        // int n;
+        // cout<<"Enter the number of row : ";
+        // cin>>n;
+        // char ch='A';
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=i;j++){
+        //         cout<<ch<<" ";
+                
+        //     }cout<<"\n";
+            
+        // }
     return 0;
 }
