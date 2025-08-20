@@ -140,15 +140,15 @@ int main() {
             // 4 3 2 1
             // 5 4 3 2 1
 
-        int n;
-        cout<<"Enter the number of row : ";
-        cin>>n;
-        for(int i=1;i<=n;i++){
-            for(int j=i;j>=1;j--){
-                cout<<j<<" ";
-            }cout<<"\n";
-        }
-           
+        // int n;
+        // cout<<"Enter the number of row : ";
+        // cin>>n;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=i;j>=1;j--){
+        //         cout<<j<<" ";
+        //     }cout<<"\n";
+        // }
+            
 
     // Right angle triangle pattern with alphabets increasing
             // A 
@@ -168,5 +168,77 @@ int main() {
         //     }cout<<"\n";
             
         // }
+// //////-------------Floyd's Triangle Pattern-----------------
+                    // 1 
+                    // 2 3 
+                    // 4 5 6 
+                    // 7 8 9 10
+
+        // int n;
+        // cout<<"Enter the number of row : ";
+        // cin>>n;
+        // int num=1;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=i;j++){
+        //         cout<<num<<" ";
+        //         num++;
+        //     }cout<<"\n";
+        // }
+// Floyd's Triangle Pattern with alphabets
+                    // A 
+                    // B C 
+                    // D E F 
+                    // G H I J
+
+        // int n;
+        // char ch='A';
+        // cout<<"Enter the number of row : ";
+        // cin>>n;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=i;j++){
+        //         cout<<ch<<" ";
+        //         ch++;
+        //     }cout<<"\n";
+        // }
+
+/////////--------------------------------------
+        //    1
+        //    3 2
+        //    6 5 4
+        //    10 9 8 7
+    //      int n;
+    //     cout << "Enter the number of row : ";
+    //     cin >> n;
+    //     int num = 1;
+    //     for (int i = 1; i <= n; i++) {
+    //     int start = num + i - 1;
+    //     for (int j = 0; j < i; j++) {
+    //         cout << start - j << " ";
+    //     }
+    //     num = start + 1;
+    //     cout << endl;
+    // }
+
+/////////---------------------------------------------------------
+
+        // A
+        // C B
+        // F E D
+        // J I G H
+
+        int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    char ch = 'A';
+    for (int i = 1; i <= n; i++) {
+        char start = ch + i - 1;
+        for (int j = 0; j < i; j++) {
+            cout << start - j << " ";
+        }
+        ch = start + 1;
+        cout << endl;
+    }
+     
+
     return 0;
 }
