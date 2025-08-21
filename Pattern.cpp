@@ -239,18 +239,41 @@ int main() {
     //     cout << endl;
     // }
      
-///////////----Inverted Angle Triangle Pattern with Numbers----////////
-    int n=4;
-    int num = 1;
-    for (int i =0; i< n;i++) {
-        for (int j = 0; j <n; j++) {
-            cout <<" ";}
-        for(int j=0;j<n-i;j++ ){
-                cout<<(i+1)<<" ";  
+////🤔🤔😎😂///////----Inverted Angle Triangle Pattern with Numbers----////////
+                // 1111
+                //  222
+                //   33
+                //    4
+                /////////nahi huaa hai yr aabhi samajhna hai 😂😂
+// int n=4;
+    // int num = 1;
+    // for (int i =0; i< n;i++) {
+    //     for (int j = 0; j <n; j++) {
+    //         cout <<" ";}
+    //     for(int j=0;j<n-i;j++ ){
+    //             cout<<(i+1)<<" ";  
+    //     }
+        
+    //     cout<<"\n";
+    //     }
+    
+////////Pyramid Pattern with Numbers
+    // /////     1
+    //         1 2 1
+    //       1 2 3 2 1
+    //     1 2 3 4 3 2 1
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        for(int j=1;j<=n-i;j++){
+                    cout<<" ";
+                 }
+                    
+        for(int j=1;j<=i;j++){
+                    cout<<j<<" ";
+                cout<<"\n";}
         }
         
-        cout<<"\n";
-        }
-    
     return 0;
 }
