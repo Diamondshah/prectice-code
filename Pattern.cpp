@@ -226,19 +226,31 @@ int main() {
         // F E D
         // J I G H
 
-        int n;
-    cout << "Enter the number of rows: ";
-    cin >> n;
-    char ch = 'A';
-    for (int i = 1; i <= n; i++) {
-        char start = ch + i - 1;
-        for (int j = 0; j < i; j++) {
-            cout << start - j << " ";
-        }
-        ch = start + 1;
-        cout << endl;
-    }
+    //     int n;
+    // cout << "Enter the number of rows: ";
+    // cin >> n;
+    // char ch = 'A';
+    // for (int i = 1; i <= n; i++) {
+    //     char start = ch + i - 1;
+    //     for (int j = 0; j < i; j++) {
+    //         cout << start - j << " ";
+    //     }
+    //     ch = start + 1;
+    //     cout << endl;
+    // }
      
-
+///////////----Inverted Angle Triangle Pattern with Numbers----////////
+    int n=4;
+    int num = 1;
+    for (int i =0; i< n;i++) {
+        for (int j = 0; j <n; j++) {
+            cout <<" ";}
+        for(int j=0;j<n-i;j++ ){
+                cout<<(i+1)<<" ";  
+        }
+        
+        cout<<"\n";
+        }
+    
     return 0;
 }
