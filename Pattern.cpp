@@ -258,28 +258,46 @@ int main() {
     //     }
     
 ////////Pyramid Pattern with Numbers
-    // /////     1
-    //         1 2 1
-    //       1 2 3 2 1
-    //     1 2 3 4 3 2 1
-    int n;
-    cout << "Enter the number of rows: ";
-    cin >> n;
-    for (int i = 1; i <= n; i++) {
-        for(int j=1;j<=n-i;j++){
-                    cout<<" ";
-                 }
+    // /////  /// 1             n=8
+        //       121   
+        //      12321  
+        //     1234321 
+        //    123454321
+        //   12345654321
+        //  1234567654321
+        // 123456787654321
+    // int n;
+    // cout << "Enter the number of rows: ";
+    // cin >> n;
+    // for (int i = 1; i <= n; i++) {
+    //     for(int j=1;j<=n-i;j++){
+    //                 cout<<" ";
+    //              }
                  
                     
-        for(int j=1;j<=i;j++){
-                    cout<<j<<" ";
-                }
-       for(int j=i-1;j>=1;j--){
-                    cout<<j<<" ";
-                }
-                cout<<"\n";
+    //     for(int j=1;j<=i;j++){
+    //                 cout<<j;
+    //             }
+    //    for(int j=i-1;j>=1;j--){
+    //                 cout<<j;
+    //             }
+    //             cout<<"\n";
             
-        }
+    //     }
+
+    // ///////////hollow Diamond pattern--------
+
+    int n=4;
+    // cout << "Enter the number of rows: ";
+    // cin >> n;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+            cout<<" ";
+        if(i!=0){
+            cout<<"*";}
+                 }
+                 cout<<"\n";   
+    }
         
     return 0;
 }
