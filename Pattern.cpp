@@ -2,6 +2,8 @@
 using namespace std;
 int main() {
     // cout<<"hello"<<endl;
+////////PATTERN PROGRAMS////////
+
     // int n;
     // cout << "Enter a number of n : "<<endl;
     // cin >> n;
