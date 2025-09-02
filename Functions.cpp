@@ -84,21 +84,38 @@ using namespace std;
 
 /////////Calculate Sum of numbers from 1 to N.///////////
 
-        int sumofN(int n){
-            int sum=0;
+        // int sumofN(int n){
+        //     int sum=0;
+        //     for(int i=1;i<=n;i++){
+        //         sum=sum+i;
+        //     }
+        //     return sum;
+        // }
+        // int main(){
+        // int n;
+        // cout<<"Enter the Value of N :";
+        // cin>>n;
+        // cout<<sumofN(n)<<endl;
+        // cout<<sumofN(55)<<endl;
+        // cout<<sumofN(10)<<endl;
+        // return 0;
+        // }
+
+//////////////Calculate Factorial of a number./////////////
+        int fectr(int n){
+            int mult=1;
             for(int i=1;i<=n;i++){
-                sum=sum+i;
+                mult=mult*i;
             }
-            return sum;
-        }
-        int main(){
-        int n;
-        cout<<"Enter the Value of N :";
-        cin>>n;
-        cout<<sumofN(n)<<endl;
-        cout<<sumofN(55)<<endl;
-        cout<<sumofN(10)<<endl;
-        return 0;
+            return mult;
         }
 
-//////////////
+        int main(){
+            int n;
+            cout<<"Enter the Value of N :";
+            cin>>n;
+            cout<<fectr(n)<<endl;
+            cout<<fectr(9)<<endl;
+            cout<<fectr(5)<<endl;
+            return 0;
+        }
