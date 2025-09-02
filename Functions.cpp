@@ -102,20 +102,68 @@ using namespace std;
         // }
 
 //////////////Calculate Factorial of a number./////////////
-        int fectr(int n){
-            int mult=1;
+        // int fectr(int n){
+        //     int mult=1;
+        //     for(int i=1;i<=n;i++){
+        //         mult=mult*i;
+        //     }
+        //     return mult;
+        // }
+
+        // int main(){
+        //     int n;
+        //     cout<<"Enter the Value of N :";
+        //     cin>>n;
+        //     cout<<fectr(n)<<endl;
+        //     cout<<fectr(9)<<endl;
+        //     cout<<fectr(5)<<endl;
+        //     return 0;
+        // }
+
+//////////Calculate Sum of digits of a number.///////////
+        // int sumofdigit(int n){
+        //     int sum=0;
+        //     while(n>0){
+        //         int lastdigit=n%10;
+        //         sum=sum+lastdigit;
+        //         n=n/10;
+        //     }
+        //     return sum;
+        // }
+
+        // int main(){
+        //     int n;
+        //     cout<<"Enter the Value of N :";
+        //     cin>>n;
+        //     cout<<sumofdigit(n)<<endl;
+        //     cout<<sumofdigit(123)<<endl;
+        //     cout<<sumofdigit(456)<<endl;
+        //     return 0;
+        // }
+
+//////////Calculate nCr (Binomial Coefficient).///////////
+        int factorial(int n){
+            int fact=1;
             for(int i=1;i<=n;i++){
-                mult=mult*i;
+                fact=fact*i;
             }
-            return mult;
+            return fact;
+        }
+
+        int nCr(int n,int r){
+            int num=factorial(n);
+            int den=factorial(r)*factorial(n-r);
+            return num/den;
         }
 
         int main(){
-            int n;
+            int n,r;
             cout<<"Enter the Value of N :";
             cin>>n;
-            cout<<fectr(n)<<endl;
-            cout<<fectr(9)<<endl;
-            cout<<fectr(5)<<endl;
+            cout<<"Enter the Value of R :";
+            cin>>r;
+            cout<<nCr(n,r)<<endl;
+            cout<<nCr(5,2)<<endl;
+            cout<<nCr(6,3)<<endl;
             return 0;
         }
