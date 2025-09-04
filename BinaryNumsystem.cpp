@@ -27,21 +27,21 @@ using namespace std;
 // }
 
 ///// Convert Binary to Decimal Number System./////
-        int binaryToDec(int binNum){
-            int ans=0;
-            int power=1;
-            while(binNum>0){
-                int rem=binNum%10;
-                binNum=binNum/10;
-                ans=ans+rem*power;
-                power=power*2;
-            }
-            return ans;}
-        int main(){
-            int binNum;
-            cout<<"Enter a Binary Number :";
-            cin>>binNum ;
-            int decimal=binaryToDec(binNum);
-            cout<<"the Decimal Number is :"<<decimal<<endl;
-            return 0;
-        }
+        // int binaryToDec(int binNum){
+        //     int ans=0;
+        //     int power=1;
+        //     while(binNum>0){
+        //         int rem=binNum%10;
+        //         binNum=binNum/10;
+        //         ans=ans+rem*power;
+        //         power=power*2;
+        //     }
+        //     return ans;}
+        // int main(){
+        //     int binNum;
+        //     cout<<"Enter a Binary Number :";
+        //     cin>>binNum ;
+        //     int decimal=binaryToDec(binNum);
+        //     cout<<"the Decimal Number is :"<<decimal<<endl;
+        //     return 0;
+        // }
